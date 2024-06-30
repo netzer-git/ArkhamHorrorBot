@@ -1,4 +1,4 @@
-export type BugContent = {
+export type BagContent = {
     campaignName: string,
     p1: number,
     p0: number,
@@ -18,24 +18,24 @@ export type BugContent = {
     chaos: number
 }
 
-export class BugOfDoom {
-    private bugContent: BugContent;
+export class ChaosBag {
+    private bugContent: BagContent;
     private campaignName: string;
     private userName: string;
 
-    constructor(userName: string, bugContent: BugContent, campaignName: string) {
+    constructor(userName: string, bagContent: BagContent, campaignName: string) {
         this.userName = userName;
-        this.bugContent = bugContent;
+        this.bugContent = bagContent;
         this.campaignName = campaignName;
     }
 
 
 }
 
-const saveBug = (): boolean => {
+const saveBag = (): boolean => {
     return true;
 }
 
-const loadBug = (): BugContent | false => {
+const loadBag = (): BagContent | false => {
     return false;
 }
